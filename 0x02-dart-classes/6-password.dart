@@ -1,13 +1,13 @@
 class Password {
-  String _password = '';
+  String? _password;
 
-  Password({String password = ''}) {
+  Password({String? password}) {
     _password = password;
   }
 
   String get password => _password;
 
-  set password(String password) {
+  set password(String? password) {
     _password = password;
   }
 
@@ -21,7 +21,8 @@ class Password {
     return true;
   }
 
+  @override
   String toString() {
-    return 'Your Password is: $_password';
+    return 'Your Password is: ${_password ?? 'not set'}';
   }
 }
