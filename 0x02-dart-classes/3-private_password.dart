@@ -9,7 +9,7 @@ class Password {
     if (_password.length < 8 || _password.length > 16) {
       return false;
     }
-    if (!RegExp(r'(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])').hasMatch(password)) {
+    if (!RegExp(r'(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])').hasMatch(_password)) {
       return false;
     }
     return true;
