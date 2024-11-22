@@ -1,7 +1,7 @@
 class Password {
-  String _password = "";
+  String _password = '';
 
-  Password({String password = ""}) {
+  Password({String password = ''}) {
     _password = password;
   }
 
@@ -22,6 +22,6 @@ class Password {
   }
 
   String toString() {
-    return "Your Password is: $_password";
+    return 'Your Password is: $_password';
   }
 }

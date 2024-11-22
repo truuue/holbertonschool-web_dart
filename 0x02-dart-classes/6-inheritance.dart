@@ -1,4 +1,4 @@
-import "6-password.dart";
+import '6-password.dart';
 
 class User extends Password {
   int id;
@@ -26,10 +26,10 @@ class User extends Password {
 
   Map<String, dynamic> toJson() {
     return {
-      "id": id,
-      "name": name,
-      "age": age,
-      "height": height
+      'id': id,
+      'name': name,
+      'age': age,
+      'height': height
     };
   }
 
@@ -39,11 +39,12 @@ class User extends Password {
       name: userJson['name'],
       age: userJson['age'],
       height: userJson['height'],
-      user_password: userJson['user_password']);
+      user_password: userJson['user_password']
+    );
   }
 
   @override
   String toString() {
-    return "User(id : $id ,name: $name, age: $age, height: $height, Password: ${isValid()})";
+    return 'User(id : $id ,name: $name, age: $age, height: $height, Password: ${isValid()})';
   }
 }
