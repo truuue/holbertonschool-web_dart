@@ -12,12 +12,14 @@ class Password {
 
   @override
   String toString() {
-    return 'Your Password is: ${_password ?? 'not set'}';
+    return 'Your Password is: ${_password ?? "not set"}';
   }
 
-  String? get password => _password;
+  String? get password {
+    return _password ?? "not set";
+  }
 
-  set password(String? value) {
-    _password = value;
+  void set password(String? input) {
+    this._password = input;
   }
 }

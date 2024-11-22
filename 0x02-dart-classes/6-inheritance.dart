@@ -12,7 +12,9 @@ class User extends Password {
     required this.age,
     required this.height,
     String? user_password,
-  }) : super(password: user_password);
+  }) : super(password: user_password) {
+    isValid();
+  }
 
   String? get user_password => password;
 
@@ -26,8 +28,7 @@ class User extends Password {
       'id': id,
       'name': name,
       'age': age,
-      'height': height,
-      'user_password': password
+      'height': height
     };
   }
 
